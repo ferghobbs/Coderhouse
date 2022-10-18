@@ -1,0 +1,125 @@
+.Body_mio{
+    background-color: rgb(38, 104, 104);
+    position: relative;
+    padding-bottom: 15em;
+    min-height: 100vh;
+
+}
+
+Body{
+    background-color: rgb(38, 104, 104);
+    position: relative;
+    padding-bottom: 15em;
+    min-height: 100vh;
+
+}
+.Home_Container_Mio{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.BTN{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(51, 180, 180);
+    margin: 1rem;
+    display: inline-block;
+    padding: 20px;
+}
+
+.Header{
+    width: 100%;
+    display: inline-block;
+    height: 25vh;
+    align-items: center;
+}
+
+
+
+.BTN_Selected{
+    border-color: aliceblue;
+    border: 10px;
+
+    background-color: rgb(41, 133, 133);
+}
+
+.Icon_Header{
+    max-width:130px;
+    max-height:130px;
+    display: inline-block;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+a{
+    text-decoration: none
+}
+.item_Link{
+    color: aliceblue;
+}
+footer{
+    height: 10em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.Header_container{
+    display: inline-block;
+    
+  text-align: center;
+}
+
+.Footer_Datos{
+    display: inline-block;
+}
+
+.tarjeta{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(190, 204, 199);
+    display: inline-block;
+}
+.Imagen_Persona{
+    display: inline-block;
+    height: 75px;
+    width: 120px;
+}
+
+.Texto_Card{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    word-break:break-all;
+    margin: 0 0 1em 1em;
+}
+
+.Container{
+    display: inline-block;
+    padding: 30px;
+}
+
+.Formulario_inicio{
+    display: block;
+    border: 3px solid #f1f1f1;
+    padding: 16px;
+  text-align: center;
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
