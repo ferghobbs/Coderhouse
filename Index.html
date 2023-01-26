@@ -52,11 +52,28 @@
         </div>
 
     </header>
-    
     <div class="container">
-      <input type="text" placeholder="Nombre Y apellido" id = "Name_Input"  >
+    <form action="" method="POST">
+      <h1>Producto</h1>
+      <div class="form-group">
+        <label for="">ID:</label>
+        <input type="text" class="form-control" name="IDprodC" id="IDprodC">
+    </div>
+
+      <label for="">Cantidad que desea comprar</label>
+      <input type="text" class="form-control" name="stockC" id="stockC">
+  </div>
+
+      <div class="form-group">
+        <button type="button" class="btn btn-primary btn-sm" name="btnSubmitC" id="btnSubmitC">Comprar prod</button>
+        <button type="button" class="btn btn-primary btn-sm" name="btnactualizarC" id="btnactualizarC">Cargar tabla</button>
+      </div>
+  </form>
+</div>
+    <div class="container">
+
      
-      <table class="table table-hover" id="tablaProds">
+      <table class="table table-hover" id="tablaProdsC">
           <thead>
               <tr>
                 <th>ID</th>
@@ -69,22 +86,26 @@
 
           </tbody>
       </table>
-  </div>
-    <footer class="Footer">
-        <img class="Icon_Header" src="./Imagenes/PNG/Presentacion GoHo-03.png" alt="Icon">
-        <div class="Footer_Datos">
-            <Ul>
-                <Li>Mail: En proceso</Li>
-                <Li>FB: En proceso</Li>
-                <Li>IG: En proceso</Li>
-                <Li>Linkedin: En proceso</Li>
-            </Ul>
+  </div>   
+   <div class="container">
+    <H4 class="title">carrito de compras</H4>
+    <table class="table table-hover" id="carrito">
+        <thead>
+            <tr>
+              <th>ID</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+        <tbody>
 
-        </div>
-        <i class="Icon_Home" href="./Index.html"></i>
-    </footer>
+        </tbody>
+    </table>
+</div>
+
 </body>
-<script src="javascript.js"></script>
+<script src="client.js"></script>
 </html>
 
 

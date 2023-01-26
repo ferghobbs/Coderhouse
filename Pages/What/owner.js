@@ -106,13 +106,6 @@ function imprimirTabla() {
         tbody.appendChild(row);
     }
     
-
-  fs.writeFile('/productos.json', JSON.stringify(productos), (err) => {
-    if (err) {
-        throw err;
-    }
-    console.log("Se guardaron los productos.");
-});
 }
 
 
