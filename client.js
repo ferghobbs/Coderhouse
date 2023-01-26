@@ -84,12 +84,18 @@ function comprarProds()
 function comprar(id,stock)
 {   
     var index = traerProducto(id);
-    if (stock > productosCliente[index].stock){
-        
-        window.alert(`No hay suficiente stock del producto ${productosCliente[index].prod}`);
-    }else{
-        pasarACarrito(index,id,stock);
-        console.log(carritoList)
+    if (index <0 ){
+        window.alert(`No hay producto con el id ${id}`);
+    }else
+    {
+
+        if (stock > productosCliente[index].stock){
+            
+            window.alert(`No hay suficiente stock del producto ${productosCliente[index].prod}`);
+        }else{
+            pasarACarrito(index,id,stock);
+            console.log(carritoList)
+        }
     }
 }
 
@@ -112,7 +118,7 @@ function pasarACarrito(indexProds,id,stock){
 
 var indexCarrito = encontrarEncarrito(id) 
 
-if (indexCarrito >0) 
+if (indexCarrito >=0) 
 {
     sumarProdACarr(indexCarrito,stock);
     
