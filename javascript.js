@@ -73,3 +73,7 @@ function removeAllChildNodes(parent) {
       parent.removeChild(parent.firstChild);
   }
 }
+
+
+const lista = document.querySelector('#listado')
+

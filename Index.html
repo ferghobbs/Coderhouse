@@ -22,20 +22,12 @@
               <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    <a class="nav-link active" aria-current="page" href="#">Client</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Pages/Register/Index.html">REGISTER</a>
-                  </li>          
-                   <li class="nav-item">
-                    <a class="nav-link" href="./Pages/What/Index.html">What we do</a>
+
+                    <a class="nav-link" href="./Pages/What/Index.html">Page for local owner</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Pages/Contact/index.html">CONTACT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./Pages/ABOUT/Index.html">ABOUT US</a>
-                  </li>
+
     
                 </ul>
                 <form class="d-flex" role="search">
@@ -60,15 +52,24 @@
         </div>
 
     </header>
-    <input type="text" placeholder="Nombre Y apellido" id = "Name_Input"  >
-    <h6>Ingrese numeros (simulan precio de un carrito de compra)</h6>
-    <input type="text" placeholder="Producto" id = "Prod_Input"  >
-    <input type="text" placeholder="Enter a number" id = "Number_Input"  >
-    <input type="button" name="button" onclick="getVal()" value="Submit" id = "Bttn_Calc">
-    <input type="button" name="button" onclick="Calculate()" value="Calculate">
-    <ul id="Respuesta">
-       
-    </ul>
+    
+    <div class="container">
+      <input type="text" placeholder="Nombre Y apellido" id = "Name_Input"  >
+     
+      <table class="table table-hover" id="tablaProds">
+          <thead>
+              <tr>
+                <th>ID</th>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Stock</th>
+              </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+      </table>
+  </div>
     <footer class="Footer">
         <img class="Icon_Header" src="./Imagenes/PNG/Presentacion GoHo-03.png" alt="Icon">
         <div class="Footer_Datos">

@@ -1,0 +1,24 @@
+[
+    {
+	    "ID": 1,
+	    "prod": "Campera",
+	    "precio": 35 ,
+        "stock" : 5 
+	},
+	{
+	    "ID": 2,
+	    "prod": "Remera",
+	    "precio": 15 ,
+        "stock" : 15 
+	},
+	{
+	    "ID": 3,
+	    "prod": "Gorra",
+	    "precio": 20 ,
+        "stock" : 10 
+	},	{
+	    "ID": 4,
+	    "prod": "Short",
+	    "precio": 15 ,
+        "stock" : 15 
+	}]
