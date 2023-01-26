@@ -59,13 +59,13 @@
         <label for="">ID:</label>
         <input type="text" class="form-control" name="IDprodC" id="IDprodC">
     </div>
-
+    <div class="form-group">
       <label for="">Cantidad que desea comprar</label>
       <input type="text" class="form-control" name="stockC" id="stockC">
   </div>
 
       <div class="form-group">
-        <button type="button" class="btn btn-primary btn-sm" name="btnSubmitC" id="btnSubmitC">Comprar prod</button>
+        <button type="button" class="btn btn-primary btn-sm" name="btnSubmitC" id="btnSubmitC">Agregar al carrito</button>
         <button type="button" class="btn btn-primary btn-sm" name="btnactualizarC" id="btnactualizarC">Cargar tabla</button>
       </div>
   </form>
@@ -94,14 +94,16 @@
             <tr>
               <th>ID</th>
                 <th>Producto</th>
-                <th>Precio</th>
-                <th>Stock</th>
+                <th>Precio por unidad</th>
+                <th>cantidad</th>
+                <th>subtotal</th>
             </tr>
         </thead>
         <tbody>
 
         </tbody>
     </table>
+    <button type="button" class="btn btn-primary btn-sm" name="realCompra" id="realCompra">Realizar compra</button>
 </div>
 
 </body>

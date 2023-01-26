@@ -18,9 +18,21 @@ const homeController = async () => {
 
 document.querySelector('#btnSubmitC').addEventListener('click', comprarProds);
 document.querySelector('#btnactualizarC').addEventListener('click', imprimirTablaCliente);
+document.querySelector('#realCompra').addEventListener('click', concretarCompra);
 
 
+function concretarCompra()
+{   
+    
+        var sumatotal = 0;
+        for(p of carritoList){
+            sumatotal = sumatotal + p.stock * p.precio;
+        }
+        
+        window.alert(`El precio final es de $ ${sumatotal}`);
 
+
+}
 
 function imprimirTablaCliente() {
 
@@ -49,14 +61,16 @@ function imprimirTablaCliente() {
     for (var i = 0; i < carritoList.length; i++) {
         var row = tbodyCa.insertRow(i),
             IDCelda = row.insertCell(0),
-            NameCelda = row.insertCell(1);
-            precioCelda = row.insertCell(2);
-            stockSelda = row.insertCell(3);
+            NameCelda = row.insertCell(1),
+            precioCelda = row.insertCell(2),
+            stockSelda = row.insertCell(3),
+            subtotalCelda = row.insertCell(4);
         
             IDCelda.innerHTML = Number(carritoList[i].ID);
             NameCelda.innerHTML = carritoList[i].prod;
             precioCelda.innerHTML = Number(carritoList[i].precio);
             stockSelda.innerHTML = Number(carritoList[i].stock);
+            subtotalCelda.innerHTML = Number(carritoList[i].stock)*Number(Number(carritoList[i].precio));
 
             tbodyCa.appendChild(row);
     }
